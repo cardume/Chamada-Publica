@@ -29,5 +29,5 @@ Configuração
 
 Para o tema funcionar corretamente você deve criar as seguintes páginas:
 
-* Inscreva-se (increva-se) para suportar o formulário de inscrição
+* Inscreva-se (inscreva-se) para suportar o formulário de inscrição
 * Projetos inscritos (projetos-inscritos) para suportar a lista de projetos inscritos
