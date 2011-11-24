@@ -15,9 +15,19 @@ Feito em WordPress, comporta os seguintes recursos:
 * Envio aberto de projetos integrado ao WordPress, utilizando custom post type
 * Categorias e tags para os projetos inscritos
 * Slideshow customizado em todas as páginas
+* Menu de navegação customizável
 
 
 Pré-requisitos
 --------------
 
 O Chamada Pública trabalha, por enquanto obrigatoriamente, com o plugin qTranslate. Disponível em http://wordpress.org/extend/plugins/qtranslate/
+
+
+Configuração
+------------
+
+Para o tema funcionar corretamente você deve criar as seguintes páginas:
+
+* Inscreva-se (increva-se) para suportar o formulário de inscrição
+* Projetos inscritos (projetos-inscritos) para suportar a lista de projetos inscritos
