@@ -1,0 +1,1067 @@
+/*
+
+	Festival CulturaDigital.Br
+
+*/
+
+@import url(reset.css);
+
+body {
+	background: url(../img/bg.jpg) fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #222;
+}
+
+a {
+	color: #000;
+	text-decoration: underline;
+}
+
+a:hover {
+	color: #999;
+	text-decoration: none;
+}
+
+b, strong {
+	font-weight: bold;
+}
+
+.wrap {
+	width: 960px;
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+
+.bg {
+	position: absolute;
+	width: 760px;
+	height: 661px;
+	background: url(../img/header_fest.png) top left no-repeat;
+	left: -158px;
+	top: -20px;
+}
+
+#header {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: -2;
+}
+
+#header .social {
+	position: absolute;
+	top: 17px;
+	right: 100px;
+}
+
+#header .social a {
+	background-color: #e6c578;
+	background-position: center;
+	background-repeat: no-repeat;
+	text-indent: -9999px;
+	width: 20px;
+	height: 20px;
+	display: block;
+	float: left;
+	margin-right: 5px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	border-radius: 3px;
+}
+
+#header .social a:hover {
+	background-color: #eca500;
+}
+
+#header .social a#fb {
+	background-image: url(../img/icon_fb.png);
+}
+
+#header .social a#tw {
+	background-image: url(../img/icon_tw.png);
+}
+
+#header .language {
+	position: absolute;
+	top: 20px;
+	right: 0px;
+}
+
+#header .language li {
+	text-align: right;
+	padding: 2px 0;
+}
+
+#header .language a {
+	background: transparent;
+	text-transform: uppercase;
+	padding: 0 10px;
+	text-decoration: none;
+	font-family: 'Marvel', sans-serif;
+	font-size: 14px;
+}
+
+#header .language .active {
+	display: none;
+}
+
+#header .petrobras {
+	width: 156px;
+	height: 66px;
+	background: url(../img/petrobras.png);
+	position: absolute;
+	top: 0;
+	left: 0;
+	text-indent: -9999px;
+}
+
+#header .petrobras.en {
+	background: url(../img/petrobras_en.png);
+}
+
+.loading {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	z-index: 16;
+	opacity: 0.7;
+	display: none;
+}
+
+.loading img {
+	display: block;
+	text-indent: -9999px;
+	width: 31px;
+	height: 31px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-top: -15px;
+	margin-left: -15px
+	z-index: 9999;
+}
+
+.loading.inside {
+	position: absolute;
+}
+
+.loading.inside img {
+	position: absolute;
+}
+
+.loading.sub {
+	width: 50%;
+	opacity: 0.9;
+}
+
+.loading.sub img {
+	left: 25%;
+}
+
+h1 {
+	display: block;
+	width: 960px;
+	float: left;
+	height: 69px;
+	text-indent: -9999px;
+	position: absolute;
+	bottom: 350px;
+	background: url(../img/logo.png) top right no-repeat;
+}
+
+h1 a {
+	height: 69px;
+	width: 200px;
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+#header h3.data {
+	width: 960px;
+	font-family: 'Marvel', sans-serif;
+	font-size: 34px;
+	color: #444;
+	position: absolute;
+	bottom: 280px;
+	text-align: right;
+	font-weight: bold;
+	z-index: -1;
+}
+
+#header h3.local {
+	width: 960px;
+	font-family: 'Marvel', sans-serif;
+	font-size: 26px;
+	color: #444;
+	position: absolute;
+	bottom: 255px;
+	text-align: right;
+	z-index: -1;
+}
+
+#header h3.data.inside {
+	font-size: 20px;
+	margin-left: -320px !important;
+	bottom: 32px !important;
+}
+
+#header h3.local.inside {
+	font-size: 14px;
+	margin-left: -220px !important;
+	bottom: 33px !important;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+#nav {
+	width: 100%;
+	text-align: right;
+	bottom: 150px;
+	right: 0;
+	padding: 0;
+	background: #fff;
+	position: absolute;
+	z-index: -1;
+	display: block;
+}
+
+#nav li {
+	float: right;
+	text-transform: uppercase;
+}
+
+#nav li a {
+	float: left;
+	padding: 25px 0 27px 0;
+	margin: 0 10px;
+	text-decoration: none;
+	color: #111;
+	border-top: 2px solid #fff;
+}
+
+#nav li a:hover {
+	border-top: 2px solid #e59c00;
+	color: #666;
+}
+
+#nav li a.active {
+	color: #999 !important;
+}
+
+#nav li ul {
+	display: none;
+}
+
+
+#highlight {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 150px;
+	background-color: #111;
+	color: #fff;
+	font-family: 'Marvel', sans-serif;
+}
+
+#highlight .first {
+	float: left;
+	height: 100px;
+	padding: 42px 0 8px 0;
+}
+
+#highlight .first h2 {
+	margin-top: 0px;
+	font-size: 40px;
+	text-shadow: 1px solid #000;
+	color: #ffcf6b;
+}
+
+#highlight .first h2.es {
+	font-size: 36px;
+}
+
+#highlight .first h2.fr {
+	font-size: 30px;
+}
+
+#highlight .first h2 a {
+	color: #fff;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#highlight .first h2 a:hover {
+	color: #ffcf6b;
+}
+
+#highlight .first p.data {
+	position: absolute;
+	left: 0;
+	top: 90px;
+	color: #fff;
+	font-size: 20px;
+	color: #f3be4e;
+	text-shadow: 1px 1px 0 #000;
+}
+
+#highlight .sec {
+	width: 110px;
+	float: right;
+	height: 100px;
+	padding: 40px 0 10px 0;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+#highlight .sec p.faltam {
+	font-size: 32px;
+}
+
+
+#highlight .sec .en {
+	margin-top: 15px;
+}
+
+#highlight .sec .en span {
+	font-size: 34px;
+}
+
+
+#highlight .sec .fr {
+	margin-top: 15px;
+}
+
+#highlight .sec span {
+	font-size: 29px;
+	font-weight: bold;
+}
+
+#highlight .sec p.fest {
+	font-size: 14px;
+	padding-top: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+#nav.inside {
+	width: 100%;
+	bottom: 147px !important;
+	z-index: 15;
+	background-color: transparent;
+}
+
+#nav.inside ul {
+	width: 480px;
+	margin-left: 480px;
+	background-color: #fff;
+	float: left;
+/*	border-right: 1px solid #000;
+	border-bottom: 1px solid #000; */
+}
+
+#nav.inside li {
+	float:left;
+}
+
+#nav.inside li a {
+	border-top: 0;
+	color: #000;
+	padding: 20px 0;
+	margin: 0 0 0 25px;
+	text-transform: uppercase;
+}
+
+#nav.inside li a:hover {
+	color: #e59c00;
+}
+
+
+
+
+
+
+
+#container {
+	width: 100%;
+}
+
+#container .wrap-left {
+	width: 80%;
+	min-width: 400px !important;
+	float: right;
+	padding: 40px;
+	position: relative;
+}
+
+#container .wrap-right {
+	width: 480px;
+	float: left;
+	position: relative;
+}
+
+#container .title {
+	position: fixed;
+	width: 50%;
+	right: 0;
+	bottom: 200px;
+	background: url(../img/opacity-black.png);
+	display: none;
+}
+
+#container .content {
+	position: absolute;
+	width: 50%;
+	min-height: 100%;
+	left: 0;
+	background: url(../img/opacity-white.png);
+	display: none;
+	z-index: 16;
+}
+
+#container .wrap-left .lang {
+	margin-top: -10px;
+	margin-bottom: 15px;
+	text-transform: uppercase;
+	color: #333;
+	font-size: 14px;
+	text-decoration: none;
+	font-family: 'Marvel', sans-serif;
+	padding-bottom: 5px;
+	border-bottom: 2px solid #dfdfdf;
+}
+
+#container .wrap-left .lang:hover {
+	border-color: #fff;
+	color: #000;
+}
+
+#container .content h2, #container .content h3 {
+	font-size: 24px;
+	margin: 25px 0 0 0;
+	font-family: 'Marvel', sans-serif;
+	text-transform: uppercase;
+	line-height: 130%;
+	color: #000;
+}
+
+#container .content h4 {
+	font-size: 20px;
+	margin: 25px 0 0 0;
+	font-family: 'Marvel', sans-serif;
+	font-weight: bold;
+	line-height: 150%;
+	padding-bottom: 10px;
+	border-bottom: 2px solid #c0c0c0;
+	color: #000;
+}
+
+#container .content ul {
+	margin: 20px 0;
+}
+
+#container .content ul li {
+	padding: 20px;
+	border-top: 1px solid #e0e0e0;
+	background-color: #fff;
+}
+
+#container .content p.aviso {
+	font-size: 14px;
+	text-align: center;
+	padding: 20px;	
+	border: 1px solid #dfdfdf;
+	margin: 25px 0 0 0;
+	font-family: 'Marvel', sans-serif;
+	text-transform: uppercase;
+	background-color: #fff;
+}
+
+#container .content ul li:first-child {
+	border-top: 0;
+}
+
+#container .slideshow {
+	position: fixed;
+	bottom: 339px;
+	left: 50%;
+	display: none;
+	background: url(../img/opacity-black.png);
+	overflow: hidden;
+}
+
+#container .slideshow .slideshow-container {
+	position: relative;
+	height: inherit;
+	width: 100%;
+	overflow: hidden;
+}
+
+#container .slideshow .prev {
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	text-indent: -9999px;
+	margin-top: -15px;
+	top: 50%;
+	left: 20px;
+	z-index: 10;
+	background: url(../img/arrow-prev.png) top left no-repeat;
+	display: none;
+	cursor: pointer;
+}
+
+#container .slideshow .next {
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	text-indent: -9999px;
+	margin-top: -15px;
+	top: 50%;
+	right: 20px;
+	z-index: 10;
+	background: url(../img/arrow-next.png) top left no-repeat;
+	display: none;
+	cursor: pointer;
+}
+
+#container .slideshow iframe {
+	z-index: -1;
+}
+
+#container .slideshow #fb iframe {
+	z-index: 1;
+}
+
+#container .slideshow #fb {
+	height: 25px !important;
+	margin-top: 13px;
+	margin-bottom: 25px;
+	width: 300px;
+}
+
+#container .slideshow .apresentacao .capa {
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	z-index: 10;
+	text-align: center;
+}
+
+#container .slideshow .apresentacao .capa a {
+	padding: 20px;
+	background: url(../img/opacity-black.png);
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	border-radius: 5px;
+}
+
+#container .slideshow .apresentacao .capa a:hover {
+	color: #ffc03b;
+}
+
+
+
+#container .content {
+	font-size: 14px;
+	line-height: 150%;
+}
+
+#container .content p {
+	padding: 25px 0 0 0;
+	line-height: 150%;
+}
+
+#container .title h2 {
+	font-family: 'Marvel', sans-serif;
+	font-weight: bold;
+	margin: 50px 20px;
+	font-size: 40px;
+	line-height: 120%;
+	text-transform: uppercase;
+	color: #ffc03b;
+	text-align: left;
+	height: 40px;
+	padding: 0;
+	display: block;
+}
+
+#container .title h2 a {
+	color: #ffc03b;
+	text-decoration: none;
+}
+
+#container .title .breadcrumb {
+	top: 40px;
+	left: 23px;
+	position: absolute;
+	color: #ffc03b;
+}
+
+#container .title .breadcrumb a {
+	color: #ffc03b;
+	text-decoration: none;
+	text-transform: lowercase;
+}
+
+#container .breadcrumb a:hover {
+	color: #fff;
+}
+
+
+#container #submenu.child {
+	position: absolute;
+	bottom: 20px;
+	left: 23px;
+}
+
+#container #submenu.child li {
+	float: left;
+	margin-right: 10px;
+}
+
+#container #submenu.child li a {
+	color: #111;
+	text-decoration: none;
+	text-transform: lowercase;
+	padding: 5px 10px;
+	background-color: #ffc03b;
+	border-radius: 0 15px 15px 15px;
+}
+
+#container #submenu.child li a:hover {
+	color: #000;
+	background-color: #fff;
+}
+
+#container #submenu.child li a.active {
+	background-color: transparent;
+	color: #ffc03b;
+	padding: 5px 0;
+}
+
+#container #submenu.child li a.active:before {
+	content: '//';
+}
+
+
+
+
+
+
+
+#inscricao {
+	margin-top: 35px;
+	padding-top: 20px;
+	border-top: 2px solid #333;
+}
+
+#inscricao p.error {
+	padding: 10px;
+	margin: 10px 0;
+	background-color: #fff;
+	color: #ff0000;
+}
+
+#container .content #inscricao h3 {
+	margin: 15px 0 5px 0;
+	font-family: 'Marvel', sans-serif;
+	font-size: 18px;
+	text-transform: none;
+}
+
+#inscricao input[type=text], #inscricao input[type=file], #inscricao input[type=submit], #inscricao textarea {
+	width: 370px;
+	padding: 15px;
+	border: 1px solid #dfdfdf;
+	font-size: 18px;
+	font-family: 'Marvel', sans-serif;
+	margin-bottom: 5px;
+	background-color: #fff;
+	line-height: 130%;
+}
+
+#inscricao textarea {
+	overflow: hidden;
+}
+
+#inscricao input::-webkit-input-placeholder {
+	color: #666;
+}
+
+#inscricao textarea::-webkit-input-placeholder {
+	color: #666;
+}
+
+#inscricao input:-moz-placeholder {
+	color: #666;
+}
+
+#inscricao textarea:-moz-placeholder {
+	color: #666;
+}
+
+#inscricao textarea.placeholder, #inscricao input.placeholder {
+	color: #666;
+}
+
+input, textarea {
+	outline: none;
+}
+
+#inscricao p.label {
+	margin: -11px 15px 25px 15px !important;
+	padding: 10px !important;
+	font-size: 12px;
+	color: #666;
+	background-color: #f0f0f0;
+	border-radius: 0 0 5px 5px;
+}
+
+#inscricao label.file {
+	margin: 15px 0 5px 0;
+	display: block;
+	font-family: 'Marvel', sans-serif;
+	font-size: 18px;
+}
+
+#inscricao ul {
+	margin: 5px 0 15px 0;
+	float: left;
+}
+
+#inscricao ul li {
+	float: left;
+	width: 50%;
+	margin: 5px 0;
+	padding: 0 !important;
+	border: 0 !important;
+	background: transparent !important;
+}
+
+#inscricao input[type=submit] {
+	text-align: center;
+	background-color: #000;
+	color: #fff;
+	width: 400px;
+	border: 1px solid #000;
+	text-transform: uppercase;
+	margin: 10px 0 40px 0;
+	cursor: pointer;
+}
+
+
+
+
+
+.content .filtrar {
+	width: 358px;
+	padding: 5px 20px 20px 20px;
+	margin-top: 20px;
+	background-color: #fff;
+	border: 2px solid #efefef;
+	float: left;
+}
+
+.content .filtrar h3 {
+	display: block;
+	height: 100%;
+	vertical-align: center;
+	font-family: 'Marvel', sans-serif;
+	color: #333;
+	font-size: 20px;
+	margin: 0 0 20px 0;
+}
+
+#container .content .filtrar ul {
+	margin: 20px 0 0 0;
+}
+
+#container .content .filtrar ul li {
+	float: left;
+	background: transparent;
+	padding: 0;
+	border: 0;
+}
+
+.content .filtrar ul li a {
+	color: #fff;
+	background-color: #444;
+	text-shadow: 1px 1px 0 #222;
+	padding: 7px 10px;
+	float: left;
+	margin: 0 1px 1px 0;
+	text-decoration: none;
+	font-size: 10px;
+	text-transform: uppercase;
+}
+
+.content .filtrar ul li.active a, .content .filtrar ul li a:hover {
+	background-color: #efefef;
+	color: #333;
+	text-shadow: 0 0 0;
+}
+
+.content .filtrar ul li.active a {
+	font-weight: bold;
+}
+
+
+ul#projetos li {
+	width: 400px;
+	height: 225px;
+	margin-top: 40px;
+	position: relative;
+	float: left;
+	padding: 0 !important;
+	border: 0 !important;
+	background: transparent !important;
+}
+
+ul#projetos li img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	border: 0;
+}
+
+ul#projetos li a.full {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 400px;
+	height: 225px;
+	background-color: #333;
+}
+
+ul#projetos li h2 {
+	position: absolute;
+	bottom: 20px;
+	left: 0;
+	margin: 0 !important;
+	line-height: 100% !important;
+	font-size: 18px !important;
+	text-transform: none !important;
+}
+
+ul#projetos li h2 a {
+	font-family: 'Marvel', sans-serif;
+	font-size: 18px;
+	color: #FFC03B;
+	background-color: #111;
+	text-decoration: none;
+	line-height: 40px;
+	padding: 10px 10px 10px 20px;
+}
+
+ul#projetos li .textcontainer {
+	position: absolute;
+	left: 0;
+	top: 10px;
+	padding: 10px;
+	margin: 0;
+	font-size: 12px;
+	background-color: #ffc03b;
+	color: #111;
+	display: block;
+}
+
+ul#projetos li .bartext {
+	position: absolute;
+	top: 20px;
+	left: 30px;
+	text-align: center;
+	padding: 5px;
+	background-color: #ffc03b;
+	color: #111;
+	text-decoration: none;
+	font-size: 10px;
+	text-transform: uppercase;
+	display: none !important;
+}
+
+ul#projetos li .bartext a {
+	background-color: #ffc03b;
+	color: #111;
+	text-decoration: none;
+	font-size: 10px;
+	text-transform: uppercase;
+}
+
+ul#projetos li .bartext a:hover {
+	background-color: #111;
+	color: #ffc03b;
+}
+
+.navigation .next a {
+	display: block;
+	float: left;
+	width: 100%;
+	padding: 15px 0;
+	background-color: #111;
+	text-align: center;
+	color: #fff;
+	margin-top: 40px;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 10px;
+}
+
+.navigation .next a:hover {
+	color: #ffc03b;
+}
+
+.navigation .next a.carregando {
+	color: #444 !important;
+}
+
+#container .projeto-container {
+	padding: 20px;
+	color: #fff;
+}
+
+#container .projeto-container h2 {
+	color: #ffc03b;
+	font-size: 26px;
+	padding-bottom: 15px;
+	margin-top: 15px;
+	border-bottom: 2px solid #ffc03b;
+	margin-bottom: 5px;
+	font-family: 'Marvel', sans-serif;
+}
+
+#container .projeto-container div#apoiar {
+	float: right;
+}
+
+#container .projeto-container div#apoiar .bartext {
+	float: left;
+	padding: 15px 5px 0 0;
+	display: none !important;
+}
+
+#container .projeto-container div#apoiar .bartext a {
+	text-transform: uppercase;
+	color: #FFC03B;
+	font-size: 10px;
+	text-decoration: none;
+}
+
+#container .projeto-container div#apoiar .bartext a:hover {
+	color: #fff;
+}
+
+#container .projeto-container div#apoiar .textcontainer {
+	float: right;
+	font-size: 14px;
+	padding: 10px;
+	color: #333;
+	background-color: #FFC03B;
+}
+
+#container .projeto-container div.meta {
+	height: 35px;
+	clear: both;
+}
+
+#container .projeto-container div.meta a.url {
+	color: #ffc03b;
+	float: left;
+	display: block;
+	width: 30%;
+}
+
+#container .projeto-container div.meta p.local {
+	color: #ffc03b;
+	float: right;
+	display: block;
+	width: 30%;
+	text-align: right;
+}
+
+#container .projeto-container p {
+	margin-bottom: 20px;
+	line-height: 150%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#rodape {
+	width: 100%;
+	height: 150px;
+	background: #fff;
+	position: absolute;
+	bottom: -150px;
+}
+
+#rodape .realizacao {
+	float: left;
+	margin: 25px 0;
+}
+
+#rodape .realizacao p {
+	margin: 15px 0;
+	font-size: 10px;
+}
+
+#rodape .realizacao img {
+	border: 0;
+}
+
+#rodape img.patrocinio {
+	margin-top: 22px;
+	float: right;
+}
+
+#rodape .cardume {
+	width: 200px;
+	float: right;
+	margin-top: 25px;
+}
+
+#rodape .cardume img {
+	float: right;
+	margin-left: 10px;
+}
+
+#rodape .cardume p {
+	font-size: 10px;
+	margin-top: 2px;
+	color: #666;
+	line-height: 120%;
+	text-align: right;
+}
+
+#rodape .cardume p a {
+	color: #333;
+	text-decoration: none;
+}
