@@ -22,6 +22,7 @@ Pré-requisitos
 --------------
 
 O Chamada Pública trabalha, por enquanto obrigatoriamente, com o plugin qTranslate. Disponível em http://wordpress.org/extend/plugins/qtranslate/
+O suporte está pré-configurado para receber Português, Inglês, Espanhol e Francês
 
 
 Configuração
