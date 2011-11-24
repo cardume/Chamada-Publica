@@ -1,13 +1,21 @@
+Chamada Publica
+===============
+
 Sobre o tema
 ------------
 
 O tema Chamada Publica está em fase inicial e foi criado para receber os projetos da chamada pública realizada pelo Festival CulturaDigital.Br. Grande parte do seu código ainda não está generalizado para suportar outros eventos. A proposta em liberar o código é para que outras pessoas possam colaborar e torná-lo fácil de ser apropriado.
 
-Feito em WordPress ele vêm com os seguintes recursos:
+Recursos
+--------
 
-	Navegação em AJAX
-	Envio aberto de projetos integrado ao WordPress, utilizando custom post type
-	Slideshow
+Feito em WordPress, comporta os seguintes recursos:
+
+* Navegação em AJAX
+* Envio aberto de projetos integrado ao WordPress, utilizando custom post type
+* Categorias e tags para os projetos inscritos
+* Slideshow customizado em todas as páginas
+
 
 Pré-requisitos
 --------------
