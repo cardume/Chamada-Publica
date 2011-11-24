@@ -212,11 +212,6 @@ jQuery(document).ready(function() {
 
 		jQuery.post(projeto_url, { ajax : true }, function(data) {
 
-
-			// Google Analytics
-
-			_gaq.push(['_trackPageview', '/projetos/' + projeto]);
-
 			jQuery("#container .slideshow .loading").hide('fast', function() { jQuery("#container .slideshow .loading").remove() });
 
 			jQuery("#container .slideshow .slideshow-container").empty();
@@ -245,11 +240,6 @@ jQuery(document).ready(function() {
 		}
 
 		jQuery.post(content, { ajax : true, sub : true }, function(data) {
-
-
-			// Google analytics
-
-			_gaq.push(['_trackPageview', '/' + content]);
 
 			jQuery("#container").append(data);
 
@@ -327,10 +317,6 @@ jQuery(document).ready(function() {
 		}
 
 		jQuery.post(content, { ajax : true }, function(data) {
-
-			// Google analytics
-
-			_gaq.push(['_trackPageview', '/' + content]);
 
 			jQuery("#container").append(data);
 
